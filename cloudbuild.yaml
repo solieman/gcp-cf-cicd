@@ -5,8 +5,8 @@ steps:
       - deploy
       - --runtime=nodejs8
       - --trigger-http
-      - --source=.
-      - --entry-point=f
+      - --source=./more/extra/method1/  # Function source files
+      - --entry-point=f  # Function entry point
       - hello-gcf-1 # Function name
 
   - name: 'gcr.io/cloud-builders/gcloud'
