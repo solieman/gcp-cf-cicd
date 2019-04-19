@@ -2,8 +2,8 @@ steps:
   - name: 'gcr.io/cloud-builders/gcloud'
     args:
       - functions
-      - beta
       - deploy
+      - --runtime=nodejs8
       - --trigger-http
       - --source=.
       - --entry-point=f
