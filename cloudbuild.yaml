@@ -7,8 +7,8 @@ steps:
       - --trigger-http
       - --source=.
       - --entry-point=f
-      - hello-gcf # Function name
+      - hello-gcf-1 # Function name
 
   - name: 'gcr.io/cloud-builders/gcloud'
-    args: ['functions', 'deploy', 'hello-gcf', '--trigger-http', '--runtime', 'nodejs8', '--entry-point', 'f']
+    args: ['functions', 'deploy', 'hello-gcf-2', '--trigger-http', '--runtime', 'nodejs8', '--entry-point', 'f']
     dir: ''
