@@ -2,6 +2,9 @@ steps:
   - name: 'gcr.io/cloud-builders/gsutil'
     args: ['cp', './adapter.js', './more/extra/method1/adapter.js']
 
+  - name: 'gcr.io/cloud-builders/gsutil'
+    args: ['cp', 'gs://play_with_data/vars.yaml', './more/extra/method1/vars.yaml']
+
   - name: 'gcr.io/cloud-builders/gcloud'
     args:
       - functions
@@ -15,6 +18,9 @@ steps:
 
   - name: 'gcr.io/cloud-builders/gsutil'
     args: ['cp', './adapter.js', './more/extra/method2/adapter.js']
+
+  - name: 'gcr.io/cloud-builders/gsutil'
+    args: ['cp', 'gs://play_with_data/vars.yaml', './more/extra/method1/vars.yaml']
 
   - name: 'gcr.io/cloud-builders/gcloud'
     args:
