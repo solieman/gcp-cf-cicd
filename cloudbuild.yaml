@@ -11,7 +11,7 @@ steps:
       - --source=./more/extra/method1/  # Function source files
       - --entry-point=small  # Function entry point
       - hello-gcf-1 # Function name
-      - env-vars-file=./vars.yaml
+      - --env-vars-file=./more/extra/method1/vars.yaml
 #
 #  - name: 'gcr.io/cloud-builders/gcloud'
 #    args: ['functions', 'deploy', 'hello-gcf-2', '--trigger-http', '--runtime', 'nodejs8', '--entry-point', 'f']
