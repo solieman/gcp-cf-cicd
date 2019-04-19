@@ -1,5 +1,5 @@
 steps:
-  - name: 'gcr.io/cloud-builders/gsutil'
+  - name: '123'
     args: ['cp', './adapter.js', './more/extra/method1/adapter.js']
 
   - name: 'gcr.io/cloud-builders/gsutil'
