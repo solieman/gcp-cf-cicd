@@ -1,9 +1,13 @@
 steps:
-  - name: '123'
+  - name: 'gcr.io/cloud-builders/gsutil'
     args: ['cp', './adapter.js', './more/extra/method1/adapter.js']
-
+    waitFor: ['-']  # The '-' indicates that this step begins immediately.
+    id: 'copy-adapter-for-method1'
+    -
   - name: 'gcr.io/cloud-builders/gsutil'
     args: ['cp', 'gs://play_with_data/vars.yaml', './more/extra/method1/vars.yaml']
+    waitFor: ['-']  # The '-' indicates that this step begins immediately.
+    id: 'getting-vars-for-method1'
 
   - name: 'gcr.io/cloud-builders/gcloud'
     args:
