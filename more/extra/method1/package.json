@@ -1,0 +1,8 @@
+{
+	"name": "small-adapter",
+	"version": "0.0.1",
+	"author": "Soliman",
+	"dependencies": {
+		"express": "^4.15.2"
+	}
+}

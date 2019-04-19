@@ -1,3 +1,5 @@
+const express = require('express');
+const app = express();
 const Adapter = require('./adapter');
 
 class BrazeAdapter extends Adapter {
